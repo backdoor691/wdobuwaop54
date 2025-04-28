@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.login-box {
+    margin-top: 20px;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #8a2be2;
+    color: white;
+    padding: 15px 32px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #7a1cb3;
+}
+
+.hidden {
+    display: none;
+}
+
+#roomDetails p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#roomDetails {
+    margin-top: 30px;
+}
