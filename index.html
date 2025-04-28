@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة وسيط</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>مرحبًا بك في منصة وسيط</h1>
+        <div class="login-box">
+            <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+            <button id="loginBtn" class="btn">تسجيل دخول</button>
+        </div>
+    </div>
+
+    <div id="room-section" class="hidden">
+        <div class="buttons">
+            <button id="createRoomBtn" class="btn">إنشاء غرفة</button>
+            <button id="joinRoomBtn" class="btn">انضمام للغرفة</button>
+        </div>
+        <div id="roomDetails" class="hidden">
+            <p>كود الغرفة: <span id="roomCode"></span></p>
+            <button id="copyCodeBtn" class="btn">نسخ الكود</button>
+            <button id="doneBtn" class="btn">تم</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
