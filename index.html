@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة وسيط</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة وسيط</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script type="module" src="script.js"></script>
 </head>
 <body>
-    <div class="login-container">
-        <h1>مرحبًا بك في منصة وسيط</h1>
-        <div class="login-box">
-            <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
-            <button id="loginBtn" class="btn">تسجيل دخول</button>
-        </div>
+  <div class="container">
+    <!-- شاشة تسجيل الدخول -->
+    <div id="loginScreen" class="login-container">
+      <h2>تسجيل الدخول إلى منصة وسيط</h2>
+      <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required />
+      <button id="loginBtn">تسجيل الدخول</button>
     </div>
-
-    <div id="room-section" class="hidden">
-        <div class="buttons">
-            <button id="createRoomBtn" class="btn">إنشاء غرفة</button>
-            <button id="joinRoomBtn" class="btn">انضمام للغرفة</button>
-        </div>
-        <div id="roomDetails" class="hidden">
-            <p>كود الغرفة: <span id="roomCode"></span></p>
-            <button id="copyCodeBtn" class="btn">نسخ الكود</button>
-            <button id="doneBtn" class="btn">تم</button>
-        </div>
+    <!-- شاشة الغرف -->
+    <div id="homeScreen" class="home-container" style="display:none;">
+      <h1>مرحباً بك في منصة وسيط!</h1>
+      <button id="createRoomBtn">إنشاء غرفة</button>
+      <button id="joinRoomBtn">الانضمام إلى غرفة</button>
     </div>
-
-    <script src="scripts.js"></script>
+  </div>
 </body>
 </html>
